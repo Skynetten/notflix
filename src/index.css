@@ -6,14 +6,12 @@
   z-index: 4;
 }
 
-
 .container{
   width: 100%;
   min-height: 743px;
   position: relative;
   z-index: 4;
   border-bottom: 8px solid #222;  
-
 }
 
 /* 
@@ -92,28 +90,6 @@
   font-size: 1rem;
 }
 
-.bg-img{
-  position: absolute;
-  left:0;
-  right: 0;
-  top:0;
-  bottom: 0;
-  object-fit: cover;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  
-}
-
-.bg-img-gradient{
-  position: absolute;
-  left:0;
-  right: 0;
-  top:0;
-  bottom: 0;
-  background:linear-gradient(rgba(8,8,8,0.9),rgba(8,8,8,0.2),rgba(8,8,8,0.9));
-  z-index: 1;
-}
 
 .big-text{
   display: flex;
@@ -163,17 +139,16 @@ h5{
   padding-bottom: 20px;
 }
 
-.sign-up-email:focus ~ .floating-label,
-.sign-up-email:not(:focus):valid ~ .floating-label{
+.sign-up-email:focus-visible{
   outline: none;
+}
+
+.sign-up-email:focus ~ .floating-label{
   top: 2px;
 	left: 10px;
 	font-size: 0.9rem;
 	opacity: 1;
-  
 }
-
-
 
 .floating-label{
   color:gray;
@@ -203,3 +178,70 @@ label{
   font-size: 1rem;
 }
 
+.sign-in{
+  color: white;
+  padding-bottom: 28px;
+}
+
+.form-login{
+  padding: 60px 68px 40px;
+}
+
+.black-gradient-login{
+    position: absolute;
+    left:0;
+    right: 0;
+    border-radius: 4px;
+    top:0;
+    bottom: 0;
+    background-color: rgba(8,8,8,0.84);
+    z-index: -1;
+}
+
+.sign-up-redirect {
+  color:rgb(100,100 ,100);
+}
+
+.sign-up-redirect .sign-link {
+  color: white;
+  appearance: none;
+  text-decoration: none;
+}
+
+.browse-content{
+  position: relative;
+}
+
+.bg-video{
+  position:relative;
+}
+
+.links-browse{
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+.empty-class{
+  min-height: 200px;
+  width: 36%;
+}
+
+.mute-btn{
+  position: absolute;
+  bottom: 50%;
+  right: 7vw;
+  display: flex;
+}
+
+.play-space{
+  text-align: center;
+
+}
+
+.top-row-vid{
+  width: 100%;
+}
+.exam{
+  width: 100%;
+  height: 99vh;
+}

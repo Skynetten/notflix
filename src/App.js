@@ -3,6 +3,7 @@ import bng from './bng.jpg'
 import { useEffect, useState } from 'react';
 import Email from './component/Email';
 import Background from './component/Background';
+import styled from 'styled-components';
 
 function App() {
   const [currentSignUp,setSignUp] = useState();
@@ -16,16 +17,23 @@ function App() {
     getUsers();
   }, [])
 
- 
+
+const Bottom = styled.div`
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: darkgray;
+`
 
   return (
     <>
       <div className="container">
         <TopRow />
         <Background bng={bng}/>
-      <Email users={users} />
+        <Email users={users} />
       </div>
-      
+      <Bottom/> 
+           
     </>
   );
 }
