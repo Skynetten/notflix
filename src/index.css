@@ -1,0 +1,205 @@
+*{
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 4;
+}
+
+
+.container{
+  width: 100%;
+  min-height: 743px;
+  position: relative;
+  z-index: 4;
+  border-bottom: 8px solid #222;  
+
+}
+
+/* 
+.container::before{
+  content: '';
+  position: absolute;
+  left :0;
+  bottom:0;
+  right:0;
+  top:0;
+  background-image: url('bng.jpg');
+  background-position: top;
+  background-size: cover;
+  opacity: 0.9;
+
+}
+
+.container::after {
+  content: '\A';
+  position: absolute;
+  width: 100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+  opacity: 0;
+} */
+
+.top-row{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.img-container {
+  position: relative;
+}
+
+.notflix-img{
+  object-fit: contain;
+  position: relative;
+  left:35px;
+  top:20px;
+  width: 70%;
+  height: auto;
+}
+
+.btn{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Lang select menu */
+.btn-lang{
+  padding: 7px 17px;
+  margin-right: 1rem;
+  background-color:black;
+  color:white;
+  font: size 1rem;
+  border-radius: 2px;
+  outline: 0.1px solid white;
+  position: relative;
+}
+/* Globe thing on the left of lang button */
+
+
+.btn-sign-in{
+  background-color: red;
+  color: white;
+  border:none;
+  padding:7px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.bg-img{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.bg-img-gradient{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background:linear-gradient(rgba(8,8,8,0.9),rgba(8,8,8,0.2),rgba(8,8,8,0.9));
+  z-index: 1;
+}
+
+.big-text{
+  display: flex;
+  flex-flow: column;
+  color: white;
+  position: relative;
+  padding: 70px 45px;
+  text-align: center;
+}
+
+.small-text {
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+}
+
+.sub-heading{
+  font-size: 3.7rem;
+  margin: 0 auto;
+}
+
+h5{
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.sign-up{
+  display: flex;
+  position: relative;
+  padding-top: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sign-up-form{
+  width: 55%;
+  position: relative;
+}
+
+.sign-up-email{
+  width: 100%;
+  padding: 20px 5px;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.sign-up-email:focus ~ .floating-label,
+.sign-up-email:not(:focus):valid ~ .floating-label{
+  outline: none;
+  top: 2px;
+	left: 10px;
+	font-size: 0.9rem;
+	opacity: 1;
+  
+}
+
+
+
+.floating-label{
+  color:gray;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.sign-up-btn{
+  background-color: red;
+  color: white;
+  border:none;
+  padding:7px 17px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.right-angle-arrow{
+  padding-left: 10px;
+  font-size:20px;
+}
+
+label{
+  font-size: 1rem;
+}
+
