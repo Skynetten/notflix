@@ -1,5 +1,5 @@
 import TopRow from './component/TopRow';
-import bng from './bng.jpg'
+import bng from './img/bng.jpg'
 import { useEffect, useState } from 'react';
 import Email from './component/Email';
 import Background from './component/Background';

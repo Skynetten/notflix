@@ -12,7 +12,7 @@ function SignUp(){
     }
     const callSign = (event) => {
         event.preventDefault();
-        navigate('/sign-up',{ state:{ email:{email} } }) 
+        navigate('/sign-up',{ state:{ email: email } }) 
     }
 
     return (
@@ -22,7 +22,7 @@ function SignUp(){
                 <div className="sign-up">
                     <div className="sign-up-form">
                         <input onChange={addName} type="email" className="sign-up-email" value={email} required></input>
-                        <span className="floating-label">Email Address</span>
+                        <span className={email==""||email==undefined?"floating-label":"floating-label floating-label-small"}>Email Address</span>
                     </div>
                     <button type="submit" className="sign-up-btn"> Get Started <span className="right-angle-arrow">&#8250;</span></button>
                 </div>

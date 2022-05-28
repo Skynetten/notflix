@@ -1,60 +1,13 @@
-// import {Background} won't work because it is a default export
-// Don't need to destruct it
 import Background from '../component/Background'
-import bng from '../bng.jpg'
-import notflix from '../component/notflix.png'
+import bng from '../img/bng.jpg'
+import notflix from '../img/notflix.png'
 import Notflix from '../component/Notflix'
-import styled, { css } from 'styled-components'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
+import {Invalid, Button, Input, FormLogin, TopRow} from "../util/LoginStyle"
 
 
-const TopRow = styled.div`
-    display:flex;
-    margin-bottom:24px;
-`
-const FormLogin = styled.div` 
-    position : relative;
-    margin: 0 auto ;
-    max-width: 450px;
-    z-index : 4;
-`
-const Input = styled.input`
-    outline: none;
-    padding-left: 10px;
-    border-radius: 7px;
-    font-size: 1.1rem;
-    color:white;
-    border: 0;
-    background-color: #333;
-    display: block;
-    height: 50px;
-    margin-bottom: 10px;
-    width: 100%;
-`
-const Button = styled.button`
-    width: 100%;
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 24px 0 12px;
-    border:0;
-    cursor: pointer;
-    padding:16px;
-    border-radius: 6px;
-    margin-bottom: 2rem;
-`
-const Invalid = styled.p`
-    color: white;
-    background-color: #e87c03;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 8px 20px;
-`
 
 function Login() {
 
@@ -106,7 +59,7 @@ function Login() {
                         <Input type="password" onChange={changeValue} value={password} placeholder="Password" required/>
                         <Button type="submit">Sign In </Button>
                     </form>
-                    <p className="sign-up-redirect">New to Netflix? <Link to="/sign-up" className="sign-link">Sign up now.</Link></p>
+                    <p className="sign-up-redirect">New to Netflix? <Link to="/sign-up" className="sign-link"> Sign up now.</Link></p>
                </div>
                 <div className="black-gradient-login"></div>
             </FormLogin>

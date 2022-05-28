@@ -1,4 +1,4 @@
-import vid from '../testVideo.mp4';
+import vid from '../img/testVideo.mp4';
 
 function Videos() {
     return (

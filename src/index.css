@@ -143,7 +143,16 @@ h5{
   outline: none;
 }
 
+/* Sibling Selector */
+/* Span is used as a sibling */
 .sign-up-email:focus ~ .floating-label{
+  top: 2px;
+	left: 10px;
+	font-size: 0.9rem;
+	opacity: 1;
+}
+
+.sign-up-email ~ .floating-label-small{
   top: 2px;
 	left: 10px;
 	font-size: 0.9rem;
@@ -178,7 +187,7 @@ label{
   font-size: 1rem;
 }
 
-.sign-in{
+.sign-in,.log-in{
   color: white;
   padding-bottom: 28px;
 }
@@ -198,15 +207,16 @@ label{
     z-index: -1;
 }
 
-.sign-up-redirect {
+.sign-up-redirect,.login-redirect {
   color:rgb(100,100 ,100);
 }
 
-.sign-up-redirect .sign-link {
+.sign-up-redirect .sign-link, .login-redirect .login-link {
   color: white;
   appearance: none;
   text-decoration: none;
 }
+
 
 .browse-content{
   position: relative;

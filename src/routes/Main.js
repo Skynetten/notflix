@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import vid from '../testVideo.mp4';
-import notflix from '../component/notflix.png'
-import st from '../st.png';
+import vid from '../img/testVideo.mp4';
+import notflix from '../img/notflix.png'
+import st from '../img/st.png';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { BiUser, BiSearch, BiVolumeMute, BiVolumeFull, BiCaretRight } from "react-icons/bi";
 import { AiOutlineReload } from "react-icons/ai"
-import { useState, } from 'react';
+import { useState } from 'react';
 
 // This file is the main page of the App
 
