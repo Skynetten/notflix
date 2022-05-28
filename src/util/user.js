@@ -1,0 +1,5 @@
+
+
+const signUp = ()=>{
+    axios.post('')    
+}

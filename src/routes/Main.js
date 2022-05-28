@@ -7,6 +7,9 @@ import { BiUser, BiSearch, BiVolumeMute, BiVolumeFull, BiCaretRight } from "reac
 import { AiOutlineReload } from "react-icons/ai"
 import { useState, } from 'react';
 
+// This file is the main page of the App
+
+
 const TopRow = styled.div`
     position: fixed;
     width: 100%;
